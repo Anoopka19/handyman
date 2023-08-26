@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cleaner</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+        <div class="col-md-4 mb-4 ">
+            <div class="booking-form"><div class="card">
+                <img src="images/user.jpg" class="card-img-top" alt="Worker 1">
+                <div class="card-body">
+                    <h5 class="card-title">Name:Shahi</h5>
+                    <p class="card-text">Phone NO:7685998767</p>
+                    <p class="card-text">**Shahi: 7 Years of Cleaning Expertise**
+
+                      Meet Shahi, a dedicated cleaner with 7 years of hands-on experience. Meticulous attention to detail, quick problem solver, and committed to delivering effective cleaning solutions. Contact: <a href="http://"> shahicleaner@email.com</a> | Phone:7685998767</p>
+                </div>
+            </div></div>
+            
+        </div>
+    
+        
+        <div class="booking-form">
+            <h2>Cleaner Booking</h2>
+            <form id="bookingForm" method="post" action="booking.js" onsubmit="return validateform()" >
+              <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" >
+                <h6  id="errname"></h6>
+              </div>
+              <div class="form-group">
+                <label for="phone">Your Phone Number:</label>
+                <input type="text" id="phone" name="phone" >
+                <h6  id="errphoneno"></h6>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" >
+                <h6  id="erremail"></h6>
+              </div>
+              <div class="form-group">
+                <label for="address">Your Address:</label>
+                <textarea id="address" name="address" rows="5" cols="30" ></textarea> 
+                <h6  id="erraddress"></h6>
+              </div>
+              <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" >
+                <h6  id="erredate"></h6>
+              </div>
+              <div class="form-group">
+                <label for="time">Time Slot:</label>
+                <select id="time" name="time" >
+                  <option value="morning">Morning (9 AM - 12 PM)</option>
+                  <option value="afternoon">Afternoon (12 PM - 3 PM)</option>
+                  <option value="evening">Evening (3 PM - 6 PM)</option>
+                </select>
+                <h6  id="errtime"></h6>
+              </div>
+              <button name="submit" type="submit">Book Now</button>
+              <a href="index.html"><button type="button">Back</button></a>
+            </form>
+          </div>
+          
+            
+          </body>
+          <link rel="stylesheet" type="text/css" href="css/booking.css">
+          <script type="text/javascript" src="js/booking.js"></script>
+          </html>          
+    
+</html>
